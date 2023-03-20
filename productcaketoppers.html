@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MinMinnie Handmade - Cake Topper</title>
+    <link rel="stylesheet" href="./dist/output.css">
+</head>
+<body>
+       <!-- NAVBAR -->
+       <div class="navbar bg-primary text-primary-content">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </label>
+            <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-primary rounded-box w-52">
+              <li><a class="btn btn-primary">About Us</a></li>
+              <li tabindex="0">
+                <a class=" btn btn-primary">
+                  Products
+                  <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/></svg>
+                </a>
+                <ul class="p-2 bg-primary rounded-box">
+                  <li><a class="btn btn-primary" href="productcards.html">Cards</a></li>
+                  <li><a class="btn btn-primary" href="productcaketoppers.html">Cake Toppers</a></li>
+                  <li><a class="btn btn-primary" href="productballoons.html">Balloon Present</a></li>
+                  <li><a class="btn btn-primary" href="productbottles.html">Water Bottles</a></li>
+                  <li><a class="btn btn-primary" href="productothers.html">Other</a></li>
+                </ul>
+              </li>
+              <li><a class="btn btn-primary">FAQ</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost normal-case text-xl" href="index.html">MinMinnie Handmade</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>About Us</a></li>
+            <li tabindex="0">
+              <a>
+                Products
+                <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
+              </a>
+              <ul class="p-2 bg-primary rounded-box">
+                <li><a class="btn btn-primary" href="productcards.html">Cards</a></li>
+                <li><a class="btn btn-primary" href="productcaketoppers.html">Cake Toppers</a></li>
+                <li><a class="btn btn-primary" href="productballoons.html">Balloon Present</a></li>
+                <li><a class="btn btn-primary" href="productbottles.html">Water Bottles</a></li>
+                <li><a class="btn btn-primary" href="productothers.html">Other</a></li>
+              </ul>
+            </li>
+            <li><a>FAQ</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn btn-secondary" href="ordernow.html">Order Now</a>
+        </div>
+    </div>
+    <!-- HERO SECTION -->
+    <!-- <div class="py-28 flex justify-center items-center bg-[url('')]">
+        <div class="m-3 text-center">
+          <p class="text-5xl">
+            Product: <span class="font-bold text-primary">Cake Toppers</span>
+          </p>
+          <p class="text-xl italic">Description About Cake Toppers</p>
+        </div>
+    </div> -->
+    <!-- HERO SECTION -->
+    <div class="hero min-h-screen bg-fixed" style="background-image: url(img/Caketopper.png);">
+      <div class="hero-overlay bg-opacity-60"></div>
+      <div class="hero-content text-center text-neutral-content">
+        <div class="max-w-md">
+          <h1 class="mb-5 text-7xl font-bold text-white">Cake Toppers</h1>
+          <p class="mb-5">Our handmade cake toppers add a touch of elegance and personalization to your celebration, making your special occasion even more memorable.</p>
+          <button class="btn btn-primary m-4">Order Now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="h-2 bg-primary"></div>
+
+    <!-- Filter -->
+    <div class="products bg-secondary p-4 text-center">
+      <p class="text-center text-xl">
+        <span class="font-bold text-primary">Filter</span> Your Options!
+      </p>
+      
+      <div class="justify-center tabs tabs-boxed bg-secondary">
+        <a class="tab occasionselect tab-active" onclick="displayOccasion()">Occasion</a> 
+        <a class="tab colourselect" onclick="displayColour()">Colour</a> 
+        <a class="tab orderselect" onclick="displayOrder()">Order</a>
+      </div>
+                        
+
+      <!-- occasion filter -->
+      <div class="text-center">
+        <div class="filterbtns occasion inline">
+          <button class="filterbtn occasionbtn btn btn-outline btn-primary btn-sm m-1 btn-active" id="all">All</button>
+          <button class="filterbtn occasionbtn btn btn-outline btn-primary btn-sm m-1" id="birthday">Birthday</button>
+          <button class="filterbtn occasionbtn btn btn-outline btn-primary btn-sm m-1" id="anniversary">Anniversary</button>
+          <button class="filterbtn occasionbtn btn btn-outline btn-primary btn-sm m-1" id="other">Other</button>  
+        </div>
+      </div>
+      <!-- colour filter -->
+      <div class="text-center">
+        <div class="filterbtns colour inline">
+          <button class="filterbtn colourbtn btn btn-outline btn-primary btn-sm m-1 btn-active" id="all">All</button>
+          <button class="filterbtn colourbtn btn btn-outline btn-primary btn-sm m-1" id="red">Red</button>
+          <button class="filterbtn colourbtn btn btn-outline btn-primary btn-sm m-1" id="green">Green</button>
+          <button class="filterbtn colourbtn btn btn-outline btn-primary btn-sm m-1" id="blue">Blue</button>
+          <button class="filterbtn colourbtn btn btn-outline btn-primary btn-sm m-1" id="purple">Purple</button>
+          <button class="filterbtn colourbtn btn btn-outline btn-primary btn-sm m-1" id="gold">Gold</button>  
+          <button class="filterbtn colourbtn btn btn-outline btn-primary btn-sm m-1" id="black">Black</button>  
+          <button class="filterbtn colourbtn btn btn-outline btn-primary btn-sm m-1" id="white">White</button>  
+        </div>
+      </div>
+      <!-- order filter -->
+      <div class="text-center">
+        <div class="order inline">
+          <button class="orderfilter btn btn-outline btn-primary btn-sm m-1 btn-active" id="all">All</button>
+          <button class="orderfilter btn btn-outline btn-primary btn-sm m-1" id="individual">Individual</button>
+          <button class="orderfilter btn btn-outline btn-primary btn-sm m-1" id="bundle">Bundle</button>  
+        </div>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="h-2 bg-primary"></div>
+
+    <!-- Cards display -->
+    <div class="filters flex flex-wrap justify-items-center justify-center m-4">
+      <!-- 1 -->
+        <div class="filter all black birthday card w-96 bg-base-100 shadow-xl m-8">
+          <figure><img src="img/caketopper1a.png" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">
+              47th Birthday Photographer
+              <div class="badge badge-secondary">1</div>
+            </h2>
+            <p>47th Birthday with Photographer Image</p>
+            <div class="card-actions justify-end">
+              <div class="badge badge-outline">Birthday</div> 
+              <div class="badge badge-outline">Black</div>
+            </div>
+            <button class="btn w-full btn-sm btn-outline btn-primary">Buy Now</button>
+          </div>
+        </div>
+      <!-- 2 -->
+      <div class="filter all red other card w-96 bg-base-100 shadow-xl m-8">
+        <figure><img src="img/caketopper2.png" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            Mother's Day Heart and Arrow
+            <div class="badge badge-secondary">2</div>
+          </h2>
+          <p>Red Tamil Mother's Day Heart and Arrow</p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">Other</div> 
+            <div class="badge badge-outline">Red</div>
+          </div>
+          <button class="btn w-full btn-sm btn-outline btn-primary">Buy Now</button>
+        </div>
+      </div>
+      <!-- 3 -->
+      <div class="filter all black birthday card w-96 bg-base-100 shadow-xl m-8">
+        <figure><img src="img/caketopper3.png" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            Paris Themed Birthday
+            <div class="badge badge-secondary">3</div>
+          </h2>
+          <p>Black Paris Themed 13th Birthday</p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">Birthday</div> 
+            <div class="badge badge-outline">Black</div>
+          </div>
+          <button class="btn w-full btn-sm btn-outline btn-primary">Buy Now</button>
+        </div>
+      </div>
+      <!-- 4 -->
+      <div class="filter all gold birthday card w-96 bg-base-100 shadow-xl m-8">
+        <figure><img src="img/caketopper4a.png" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            "Made in 1983" Birthday
+            <div class="badge badge-secondary">4</div>
+          </h2>
+          <p>Gold "Made in 1983" Birthday</p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">Birthday</div> 
+            <div class="badge badge-outline">Gold</div>
+          </div>
+          <button class="btn w-full btn-sm btn-outline btn-primary">Buy Now</button>
+        </div>
+      </div>
+      <!-- 5 -->
+      <div class="filter all gold birthday card w-96 bg-base-100 shadow-xl m-8">
+        <figure><img src="img/caketopper5.png" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            10th Birthday
+            <div class="badge badge-secondary">5</div>
+          </h2>
+          <p>Gold 10th Birthday Hearts</p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">Birthday</div> 
+            <div class="badge badge-outline">Gold</div>
+          </div>
+          <button class="btn w-full btn-sm btn-outline btn-primary">Buy Now</button>
+        </div>
+      </div>
+      <!-- 6 -->
+      <div class="filter all purple other card w-96 bg-base-100 shadow-xl m-8">
+        <figure><img src="img/caketopper6.png" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            Mother's Day
+            <div class="badge badge-secondary">6</div>
+          </h2>
+          <p>Purple Mother's Day</p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">Other</div> 
+            <div class="badge badge-outline">Purple</div>
+          </div>
+          <button class="btn w-full btn-sm btn-outline btn-primary">Buy Now</button>
+        </div>
+      </div>
+      <!-- 7 -->
+      <div class="filter all black birthday card w-96 bg-base-100 shadow-xl m-8">
+        <figure><img src="img/caketopper7.png" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            13th Birthday
+            <div class="badge badge-secondary">7</div>
+          </h2>
+          <p>Black 13th Birthday</p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">Birthday</div> 
+            <div class="badge badge-outline">Black</div>
+          </div>
+          <button class="btn w-full btn-sm btn-outline btn-primary">Buy Now</button>
+        </div>
+      </div>
+      <!-- 8 -->
+      <div class="filter all white birthday card w-96 bg-base-100 shadow-xl m-8">
+        <figure><img src="img/caketopper8a.png" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            Dad Birthday
+            <div class="badge badge-secondary">8</div>
+          </h2>
+          <p>White Birthday Dad</p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">Birthday</div> 
+            <div class="badge badge-outline">Purple</div>
+          </div>
+          <button class="btn w-full btn-sm btn-outline btn-primary">Buy Now</button>
+        </div>
+      </div>
+      <!-- 9 -->
+      <div class="filter all black anniversary card w-96 bg-base-100 shadow-xl m-8">
+        <figure><img src="img/caketopper9a.png" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            Moon Anniversary Silhouette
+            <div class="badge badge-secondary">9</div>
+          </h2>
+          <p>Black Moon Anniversary Silhouette</p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">Anniversary</div> 
+            <div class="badge badge-outline">Black</div>
+          </div>
+          <button class="btn w-full btn-sm btn-outline btn-primary">Buy Now</button>
+        </div>
+      </div>
+      <!-- 10 -->
+      <div class="filter all blue birthday card w-96 bg-base-100 shadow-xl m-8">
+        <figure><img src="img/caketopper10.png" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            Tamil 75th Birthday
+            <div class="badge badge-secondary">10</div>
+          </h2>
+          <p>Blue Tamil 75th Birthday</p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">Birthday</div> 
+            <div class="badge badge-outline">Blue</div>
+          </div>
+          <button class="btn w-full btn-sm btn-outline btn-primary">Buy Now</button>
+        </div>
+      </div>
+      <!-- 11 -->
+      <div class="filter all white birthday card w-96 bg-base-100 shadow-xl m-8">
+        <figure><img src="img/caketopper11.png" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            1st Birthday
+            <div class="badge badge-secondary">11</div>
+          </h2>
+          <p>White 1st Birthday</p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">Birthday</div> 
+            <div class="badge badge-outline">White</div>
+          </div>
+          <button class="btn w-full btn-sm btn-outline btn-primary">Buy Now</button>
+        </div>
+      </div>
+      <!-- 12 -->
+      <div class="filter all gold birthday card w-96 bg-base-100 shadow-xl m-8">
+        <figure><img src="img/caketopper12.png" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            17th Birthday Tamil
+            <div class="badge badge-secondary">12</div>
+          </h2>
+          <p>Gold Tamil 17th Birthday</p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">Birthday</div> 
+            <div class="badge badge-outline">Gold</div>
+          </div>
+          <button class="btn w-full btn-sm btn-outline btn-primary">Buy Now</button>
+        </div>
+      </div>
+      <!-- 13 -->
+      <div class="filter all gold birthday card w-96 bg-base-100 shadow-xl m-8">
+        <figure><img src="img/caketopper13.png" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            17th Birthday Tamil
+            <div class="badge badge-secondary">13</div>
+          </h2>
+          <p>Gold Tamil 17th Birthday</p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">Birthday</div> 
+            <div class="badge badge-outline">Gold</div>
+          </div>
+          <button class="btn w-full btn-sm btn-outline btn-primary">Buy Now</button>
+        </div>
+      </div>
+      <!-- 14 -->
+      <div class="filter all gold birthday card w-96 bg-base-100 shadow-xl m-8">
+        <figure><img src="img/caketopper14.png" alt="Shoes" /></figure>
+        <div class="card-body">
+            <h2 class="card-title">
+                1st Birthday
+                <div class="badge badge-secondary">14</div>
+              </h2>
+              <p>Gold 1st Birthday</p>
+              <div class="card-actions justify-end">
+                <div class="badge badge-outline">Birthday</div> 
+                <div class="badge badge-outline">Gold</div>
+              </div>
+          <button class="btn w-full btn-sm btn-outline btn-primary">Buy Now</button>
+        </div>
+      </div>
+      <!-- 15 -->
+      <div class="filter all gold birthday card w-96 bg-base-100 shadow-xl m-8">
+        <figure><img src="img/caketopper15.png" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            40th Birthday
+            <div class="badge badge-secondary">15</div>
+          </h2>
+          <p>Gold 40th Birthday</p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">Birthday</div> 
+            <div class="badge badge-outline">Gold</div>
+          </div>
+          <button class="btn w-full btn-sm btn-outline btn-primary">Buy Now</button>
+        </div>
+      </div>
+      <!-- 16 -->
+      <div class="filter all gold birthday card w-96 bg-base-100 shadow-xl m-8">
+        <figure><img src="img/caketopper16.png" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            10th Birthday
+            <div class="badge badge-secondary">16</div>
+          </h2>
+          <p>Gold 10th Birthday</p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">Birthday</div> 
+            <div class="badge badge-outline">Gold</div>
+          </div>
+          <button class="btn w-full btn-sm btn-outline btn-primary">Buy Now</button>
+        </div>
+      </div>
+      <!-- 17 -->
+      <div class="filter all gold anniversary card w-96 bg-base-100 shadow-xl m-8">
+        <figure><img src="img/caketopper17.png" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            "Mr + Mrs" Anniversary
+            <div class="badge badge-secondary">17</div>
+          </h2>
+          <p>Gold "Mr + Mrs" Anniversary</p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">Anniversary</div> 
+            <div class="badge badge-outline">Gold</div>
+          </div>
+          <button class="btn w-full btn-sm btn-outline btn-primary">Buy Now</button>
+        </div>
+      </div>
+      <!-- 18 -->
+      <div class="filter all gold other card w-96 bg-base-100 shadow-xl m-8">
+        <figure><img src="img/caketopper18.png" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            Dream Big
+            <div class="badge badge-secondary">18</div>
+          </h2>
+          <p>Gold Dream Big</p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">Other</div> 
+            <div class="badge badge-outline">Gold</div>
+          </div>
+          <button class="btn w-full btn-sm btn-outline btn-primary">Buy Now</button>
+        </div>
+      </div>
+      <!-- 19 -->
+      <div class="filter all gold other card w-96 bg-base-100 shadow-xl m-8">
+        <figure><img src="img/caketopper19.png" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            Thank You
+            <div class="badge badge-secondary">19</div>
+          </h2>
+          <p>Gold Thank You</p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">Other</div> 
+            <div class="badge badge-outline">Gold</div>
+          </div>
+          <button class="btn w-full btn-sm btn-outline btn-primary">Buy Now</button>
+        </div>
+      </div>
+      <!-- 20 -->
+      <div class="filter all green red birthday card w-96 bg-base-100 shadow-xl m-8">
+        <figure><img src="img/caketopper20.png" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            Robin - Teen Titans Go
+            <div class="badge badge-secondary">20</div>
+          </h2>
+          <p>Red / Green Robin (Teen Titans Go) Caketopper</p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">Birthday</div> 
+            <div class="badge badge-outline">Green</div>
+            <div class="badge badge-outline">Red</div>
+          </div>
+          <button class="btn w-full btn-sm btn-outline btn-primary">Buy Now</button>
+        </div>
+      </div>
+      <!-- 21 -->
+      <div class="filter all gold birthday card w-96 bg-base-100 shadow-xl m-8">
+        <figure><img src="img/caketopper21.png" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            Birthday
+            <div class="badge badge-secondary">21</div>
+          </h2>
+          <p>Gold Birthday</p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">Birthday</div> 
+            <div class="badge badge-outline">Gold</div>
+          </div>
+          <button class="btn w-full btn-sm btn-outline btn-primary">Buy Now</button>
+        </div>
+      </div>
+      <!-- 22 -->
+      <div class="filter all blue birthday card w-96 bg-base-100 shadow-xl m-8">
+        <figure><img src="img/caketopper22.png" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            Birthday
+            <div class="badge badge-secondary">22</div>
+          </h2>
+          <p>Blue Birthday</p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">Birthday</div>
+            <div class="badge badge-outline">Blue</div>
+          </div>
+          <button class="btn w-full btn-sm btn-outline btn-primary">Buy Now</button>
+        </div>
+      </div>
+      <!-- 23 -->
+      <div class="filter all gold birthday card w-96 bg-base-100 shadow-xl m-8">
+        <figure><img src="img/caketopper23.png" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            Birthday
+            <div class="badge badge-secondary">23</div>
+          </h2>
+          <p>Gold Birthday</p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">Birthday</div> 
+            <div class="badge badge-outline">Gold</div>
+          </div>
+          <button class="btn w-full btn-sm btn-outline btn-primary">Buy Now</button>
+        </div>
+      </div>
+      <!-- 24 -->
+      <div class="filter all gold other card w-96 bg-base-100 shadow-xl m-8">
+        <figure><img src="img/caketopper24.png" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            Born Dancer
+            <div class="badge badge-secondary">24</div>
+          </h2>
+          <p>Gold Born Dance with Dancer Silhouette</p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">Other</div> 
+            <div class="badge badge-outline">Gold</div>
+          </div>
+          <button class="btn w-full btn-sm btn-outline btn-primary">Buy Now</button>
+        </div>
+      </div>
+      <!-- 25 -->
+      <div class="filter all gold birthday card w-96 bg-base-100 shadow-xl m-8">
+        <figure><img src="img/caketopper25.png" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            70th Birthday
+            <div class="badge badge-secondary">25</div>
+          </h2>
+          <p>Gold 75th Birthday</p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">Birthday</div> 
+            <div class="badge badge-outline">Gold</div>
+          </div>
+          <button class="btn w-full btn-sm btn-outline btn-primary">Buy Now</button>
+        </div>
+      </div>
+      <!-- 27 -->
+      <div class="filter all gold birthday card w-96 bg-base-100 shadow-xl m-8">
+        <figure><img src="img/caketopper27.png" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            21st Birthay
+            <div class="badge badge-secondary">27</div>
+          </h2>
+          <p>Gold 21st Birthday with Silhouette</p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">Birthday</div> 
+            <div class="badge badge-outline">Gold</div>
+          </div>
+          <button class="btn w-full btn-sm btn-outline btn-primary">Buy Now</button>
+        </div>
+      </div>
+      <!-- 28 -->
+      <div class="filter all birthday gold card w-96 bg-base-100 shadow-xl m-8">
+        <figure><img src="img/caketopper28.png" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            Dad Birthday
+            <div class="badge badge-secondary">28</div>
+          </h2>
+          <p>Gold Birthday Dad</p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">Birthday</div> 
+            <div class="badge badge-outline">Gold</div>
+          </div>
+          <button class="btn w-full btn-sm btn-outline btn-primary">Buy Now</button>
+        </div>
+      </div>
+      <!-- 29 -->
+      <div class="filter all gold other card w-96 bg-base-100 shadow-xl m-8">
+        <figure><img src="img/caketopper29.png" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            Congratulation
+            <div class="badge badge-secondary">29</div>
+          </h2>
+          <p>Gold Congratulation with Silhouette</p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">Other</div> 
+            <div class="badge badge-outline">Gold</div>
+          </div>
+          <button class="btn w-full btn-sm btn-outline btn-primary">Buy Now</button>
+        </div>
+      </div>
+      <!-- 30 -->
+      <div class="filter all gold other card w-96 bg-base-100 shadow-xl m-8">
+        <figure><img src="img/caketopper30.png" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            Love
+            <div class="badge badge-secondary">30</div>
+          </h2>
+          <p>Gold Love</p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">Other</div> 
+            <div class="badge badge-outline">Gold</div>
+          </div>
+          <button class="btn w-full btn-sm btn-outline btn-primary">Buy Now</button>
+        </div>
+      </div>
+      <!-- 31 -->
+      <div class="filter all gold birthday card w-96 bg-base-100 shadow-xl m-8">
+        <figure><img src="img/caketopper31.png" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            Birthday
+            <div class="badge badge-secondary">31</div>
+          </h2>
+          <p>Gold Birthday</p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">Birthday</div> 
+            <div class="badge badge-outline">Gold</div>
+          </div>
+          <button class="btn w-full btn-sm btn-outline btn-primary">Buy Now</button>
+        </div>
+      </div>
+        <!--  -->
+
+                    
+    </div>
+    <script src = "caketopper.js"></script>
+</body>
+</html>

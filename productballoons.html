@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MinMinnie Handmade - Balloon Presents</title>
+    <link rel="stylesheet" href="./dist/output.css">
+</head>
+<body>
+       <!-- NAVBAR -->
+       <div class="navbar bg-primary text-primary-content">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </label>
+            <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-primary rounded-box w-52">
+              <li><a class="btn btn-primary">About Us</a></li>
+              <li tabindex="0">
+                <a class=" btn btn-primary">
+                  Products
+                  <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/></svg>
+                </a>
+                <ul class="p-2 bg-primary rounded-box">
+                  <li><a class="btn btn-primary" href="productcards.html">Cards</a></li>
+                  <li><a class="btn btn-primary" href="productcaketoppers.html">Cake Toppers</a></li>
+                  <li><a class="btn btn-primary" href="productballoons.html">Balloon Present</a></li>
+                  <li><a class="btn btn-primary" href="productbottles.html">Water Bottles</a></li>
+                  <li><a class="btn btn-primary" href="productothers.html">Other</a></li>
+                </ul>
+              </li>
+              <li><a class="btn btn-primary">FAQ</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost normal-case text-xl" href="index.html">MinMinnie Handmade</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>About Us</a></li>
+            <li tabindex="0">
+              <a>
+                Products
+                <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
+              </a>
+              <ul class="p-2 bg-primary rounded-box">
+                <li><a class="btn btn-primary" href="productcards.html">Cards</a></li>
+                <li><a class="btn btn-primary" href="productcaketoppers.html">Cake Toppers</a></li>
+                <li><a class="btn btn-primary" href="productballoons.html">Balloon Present</a></li>
+                <li><a class="btn btn-primary" href="productbottles.html">Water Bottles</a></li>
+                <li><a class="btn btn-primary" href="productothers.html">Other</a></li>
+              </ul>
+            </li>
+            <li><a>FAQ</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn btn-secondary" href="ordernow.html">Order Now</a>
+        </div>
+    </div>
+    <!-- HERO SECTION -->
+    <!-- <div class="py-28 flex justify-center items-center bg-[url('')]">
+        <div class="m-3 text-center">
+          <p class="text-5xl">
+            Product: <span class="font-bold text-primary">Balloon Presents</span>
+          </p>
+          <p class="text-xl italic">Description About Balloon Presents</p>
+        </div>
+    </div> -->
+    <!-- HERO SECTION -->
+    <div class="hero min-h-screen bg-fixed" style="background-image: url(img/Balloon.png);">
+      <div class="hero-overlay bg-opacity-60"></div>
+      <div class="hero-content text-center text-neutral-content">
+        <div class="max-w-md">
+          <h1 class="mb-5 text-7xl font-bold text-white">Balloon Present</h1>
+          <p class="mb-5">Our handmade balloon presents are a fun and unique way to surprise your loved ones and make any occasion extra special.</p>
+          <button class="btn btn-primary m-4">Order Now</button>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Divider -->
+    <div class="h-2 bg-primary"></div>
+
+    <!-- Filter -->
+    <div class="products bg-secondary p-4 text-center">
+      <p class="text-center text-xl">
+        <span class="font-bold text-primary">Filter</span> Your Options!
+      </p>
+      
+      <div class="justify-center tabs tabs-boxed bg-secondary">
+        <a class="tab occasionselect tab-active" onclick="displayOccasion()">Occasion</a> 
+        <a class="tab colourselect" onclick="displayColour()">Colour</a> 
+        <!-- <a class="tab orderselect" onclick="displayOrder()">Order</a> -->
+      </div>
+                        
+
+      <!-- occasion filter -->
+      <div class="text-center">
+        <div class="filterbtns occasion inline">
+          <button class="filterbtn occasionbtn btn btn-outline btn-primary btn-sm m-1 btn-active" id="all">All</button>
+          <button class="filterbtn occasionbtn btn btn-outline btn-primary btn-sm m-1" id="birthday">Birthday</button>
+          <button class="filterbtn occasionbtn btn btn-outline btn-primary btn-sm m-1" id="other">Other</button>  
+        </div>
+      </div>
+      <!-- colour filter -->
+      <div class="text-center">
+        <div class="filterbtns colour inline">
+          <button class="filterbtn colourbtn btn btn-outline btn-primary btn-sm m-1 btn-active" id="all">All</button>
+          <button class="filterbtn colourbtn btn btn-outline btn-primary btn-sm m-1" id="red">Red</button>
+          <button class="filterbtn colourbtn btn btn-outline btn-primary btn-sm m-1" id="green">Green</button>
+          <button class="filterbtn colourbtn btn btn-outline btn-primary btn-sm m-1" id="blue">Blue</button>
+          <button class="filterbtn colourbtn btn btn-outline btn-primary btn-sm m-1" id="purple">Purple</button>
+          <button class="filterbtn colourbtn btn btn-outline btn-primary btn-sm m-1" id="gold">Gold</button>  
+          <button class="filterbtn colourbtn btn btn-outline btn-primary btn-sm m-1" id="black">Black</button>  
+          <button class="filterbtn colourbtn btn btn-outline btn-primary btn-sm m-1" id="white">White</button>  
+        </div>
+      </div>
+      <!-- order filter -->
+      <!-- <div class="text-center">
+        <div class="order inline">
+          <button class="orderfilter btn btn-outline btn-primary btn-sm m-1 btn-active" id="all">All</button>
+          <button class="orderfilter btn btn-outline btn-primary btn-sm m-1" id="individual">Individual</button>
+          <button class="orderfilter btn btn-outline btn-primary btn-sm m-1" id="bundle">Bundle</button>  
+        </div>
+      </div> -->
+    </div>
+
+    <!-- Divider -->
+    <div class="h-2 bg-primary"></div>
+
+    <!-- Cards display -->
+    <div class="filters flex flex-wrap justify-items-center justify-center m-4">
+      <!-- 1 -->
+        <div class="filter all black pink birthday card w-96 bg-base-100 shadow-xl m-8">
+          <figure><img src="img/balloonpresent1.png" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">
+              Tamil Dad Birthday
+              <div class="badge badge-secondary">1</div>
+            </h2>
+            <p>Pink / Black Tamil Dad Birthday Balloon Present</p>
+            <div class="card-actions justify-end">
+              <div class="badge badge-outline">Birthday</div> 
+              <div class="badge badge-outline">Black</div>
+              <div class="badge badge-outline">Pink</div>
+            </div>
+            <button class="btn w-full btn-sm btn-outline btn-primary">Buy Now</button>
+          </div>
+        </div>
+      <!-- 2 -->
+      <div class="filter all purple black birthday card w-96 bg-base-100 shadow-xl m-8">
+        <figure><img src="img/balloonpresent2.png" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            Birthday Queen
+            <div class="badge badge-secondary">2</div>
+          </h2>
+          <p>Purple / Black Birthday Queen Balloon Present</p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">Birthday</div> 
+            <div class="badge badge-outline">Purple</div>
+            <div class="badge badge-outline">Black</div>
+          </div>
+          <button class="btn w-full btn-sm btn-outline btn-primary">Buy Now</button>
+        </div>
+      </div>
+      <!-- 3 -->
+      <div class="filter all black green white birthday card w-96 bg-base-100 shadow-xl m-8">
+        <figure><img src="img/balloonpresent3.png" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            Sweet Sixteen Tamil
+            <div class="badge badge-secondary">3</div>
+          </h2>
+          <p>Green / Black / White Tamil Sweet Sixteen Balloon Present</p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">Birthday</div> 
+            <div class="badge badge-outline">Black</div>
+            <div class="badge badge-outline">Green</div>
+            <div class="badge badge-outline">White</div>
+          </div>
+          <button class="btn w-full btn-sm btn-outline btn-primary">Buy Now</button>
+        </div>
+      </div>
+      <!-- 4 -->
+      <div class="filter all black white birthday card w-96 bg-base-100 shadow-xl m-8">
+        <figure><img src="img/balloonpresent4.png" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            Birthday Present w/ Chocolate
+            <div class="badge badge-secondary">4</div>
+          </h2>
+          <p>Black / White Birthday Balloon Present w/ Chocolate</p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">Birthday</div> 
+            <div class="badge badge-outline">Black</div>
+            <div class="badge badge-outline">White</div>
+          </div>
+          <button class="btn w-full btn-sm btn-outline btn-primary">Buy Now</button>
+        </div>
+      </div>
+      <!-- 5 -->
+      <div class="filter all gold green other card w-96 bg-base-100 shadow-xl m-8">
+        <figure><img src="img/balloonpresent5b.png" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            Welcome Home
+            <div class="badge badge-secondary">5</div>
+          </h2>
+          <p>Gold / Green Welcome Home Balloon Present</p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">Other</div> 
+            <div class="badge badge-outline">Gold</div>
+            <div class="badge badge-outline">Green</div>
+          </div>
+          <button class="btn w-full btn-sm btn-outline btn-primary">Buy Now</button>
+        </div>
+      </div>
+      <!-- 6 -->
+      <div class="filter all pink white black birthday card w-96 bg-base-100 shadow-xl m-8">
+        <figure><img src="img/balloonpresent6a.png" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            Tamil 13th Birthday
+            <div class="badge badge-secondary">6</div>
+          </h2>
+          <p>Pink / White / Black Tamil 13th Birthday Balloon Present</p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">Birthday</div> 
+            <div class="badge badge-outline">Pink</div>
+            <div class="badge badge-outline">White</div>
+            <div class="badge badge-outline">Black</div>
+          </div>
+          <button class="btn w-full btn-sm btn-outline btn-primary">Buy Now</button>
+        </div>
+      </div>
+      <!-- 7 -->
+      <div class="filter all pink birthday card w-96 bg-base-100 shadow-xl m-8">
+        <figure><img src="img/balloonpresent7a.png" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            36th Birthday
+            <div class="badge badge-secondary">7</div>
+          </h2>
+          <p>Pink 13th Birthday Balloon Present</p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">Birthday</div> 
+            <div class="badge badge-outline">Pink</div>
+          </div>
+          <button class="btn w-full btn-sm btn-outline btn-primary">Buy Now</button>
+        </div>
+      </div>
+      <!-- 8 -->
+      <div class="filter all pink white other card w-96 bg-base-100 shadow-xl m-8">
+        <figure><img src="img/balloonpresent8b.png" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            Valentine's Gift to Mom
+            <div class="badge badge-secondary">8</div>
+          </h2>
+          <p>Pink / White Mom Valentine Balloon Present</p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">Other</div> 
+            <div class="badge badge-outline">Pink</div>
+            <div class="badge badge-outline">White</div>
+          </div>
+          <button class="btn w-full btn-sm btn-outline btn-primary">Buy Now</button>
+        </div>
+      </div>
+      <!-- 9 -->
+      <div class="filter all red gold black other card w-96 bg-base-100 shadow-xl m-8">
+        <figure><img src="img/balloonpresent9.png" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            Tamil Wedding Gift
+            <div class="badge badge-secondary">9</div>
+          </h2>
+          <p>Red / Gold / Black Tamil Wedding Gift Balloon Present</p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">Other</div> 
+            <div class="badge badge-outline">Black</div>
+            <div class="badge badge-outline">Red</div>
+            <div class="badge badge-outline">Gold</div>
+          </div>
+          <button class="btn w-full btn-sm btn-outline btn-primary">Buy Now</button>
+        </div>
+      </div>
+      <!-- 10 -->
+      <div class="filter all blue white birthday card w-96 bg-base-100 shadow-xl m-8">
+        <figure><img src="img/balloonpresent10.png" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            Child Birthday
+            <div class="badge badge-secondary">10</div>
+          </h2>
+          <p>Blue Child Birthday Balloon Present</p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">Birthday</div> 
+            <div class="badge badge-outline">Blue</div>
+            <div class="badge badge-outline">White</div>
+          </div>
+          <button class="btn w-full btn-sm btn-outline btn-primary">Buy Now</button>
+        </div>
+      </div>
+      <!-- 11 -->
+      <div class="filter all gold black birthday card w-96 bg-base-100 shadow-xl m-8">
+        <figure><img src="img/balloonpresent11a.png" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            1st Birthday
+            <div class="badge badge-secondary">11</div>
+          </h2>
+          <p>Gold / Black 1st Birthday</p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">Birthday</div> 
+            <div class="badge badge-outline">Gold</div>
+            <div class="badge badge-outline">Black</div>
+          </div>
+          <button class="btn w-full btn-sm btn-outline btn-primary">Buy Now</button>
+        </div>
+      </div>
+        <!--  -->
+
+                    
+    </div>
+    <script src = "balloons.js"></script>
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MinMinnie Handmade - Bottles</title>
+    <link rel="stylesheet" href="./dist/output.css">
+</head>
+<body>
+       <!-- NAVBAR -->
+       <div class="navbar bg-primary text-primary-content">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </label>
+            <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-primary rounded-box w-52">
+              <li><a class="btn btn-primary">About Us</a></li>
+              <li tabindex="0">
+                <a class=" btn btn-primary">
+                  Products
+                  <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/></svg>
+                </a>
+                <ul class="p-2 bg-primary rounded-box">
+                  <li><a class="btn btn-primary" href="productcards.html">Cards</a></li>
+                  <li><a class="btn btn-primary" href="productcaketoppers.html">Cake Toppers</a></li>
+                  <li><a class="btn btn-primary" href="productballoons.html">Balloon Present</a></li>
+                  <li><a class="btn btn-primary" href="productbottles.html">Water Bottles</a></li>
+                  <li><a class="btn btn-primary" href="productothers.html">Other</a></li>
+                </ul>
+              </li>
+              <li><a class="btn btn-primary">FAQ</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost normal-case text-xl" href="index.html">MinMinnie Handmade</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>About Us</a></li>
+            <li tabindex="0">
+              <a>
+                Products
+                <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
+              </a>
+              <ul class="p-2 bg-primary rounded-box">
+                <li><a class="btn btn-primary" href="productcards.html">Cards</a></li>
+                <li><a class="btn btn-primary" href="productcaketoppers.html">Cake Toppers</a></li>
+                <li><a class="btn btn-primary" href="productballoons.html">Balloon Present</a></li>
+                <li><a class="btn btn-primary" href="productbottles.html">Water Bottles</a></li>
+                <li><a class="btn btn-primary" href="productothers.html">Other</a></li>
+              </ul>
+            </li>
+            <li><a>FAQ</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn btn-secondary" href="ordernow.html">Order Now</a>
+        </div>
+    </div>
+    <!-- HERO SECTION -->
+    <!-- <div class="py-28 flex justify-center items-center bg-[url('')]">
+        <div class="m-3 text-center">
+          <p class="text-5xl">
+            Product: <span class="font-bold text-primary">Bottles / Cups</span>
+          </p>
+          <p class="text-xl italic">Description About Bottles / Cups</p>
+        </div>
+    </div> -->
+
+    <!-- HERO SECTION -->
+    <div class="hero min-h-screen bg-fixed" style="background-image: url(img/Bottle.png);">
+      <div class="hero-overlay bg-opacity-60"></div>
+      <div class="hero-content text-center text-neutral-content">
+        <div class="max-w-md">
+          <h1 class="mb-5 text-7xl font-bold text-white">Bottles & Cups</h1>
+          <p class="mb-5">Quench your thirst in style with our handmade water bottles, wine glasses, and mugs - the perfect combination of practicality and aesthetic appeal!</p>
+          <button class="btn btn-primary m-4">Order Now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="h-2 bg-primary"></div>
+
+    <!-- Filter -->
+    <div class="products bg-secondary p-4 text-center">
+      <p class="text-center text-xl">
+        <span class="font-bold text-primary">Filter</span> Your Options!
+      </p>
+      
+      <div class="justify-center tabs tabs-boxed bg-secondary">
+        <a class="tab occasionselect tab-active" onclick="displayOccasion()">Order</a> 
+        <a class="tab colourselect" onclick="displayColour()">Colour</a> 
+        <!-- <a class="tab orderselect" onclick="displayOrder()">Order</a> -->
+      </div>
+                        
+
+      <!-- occasion filter -->
+      <div class="text-center">
+        <div class="filterbtns occasion inline">
+          <button class="filterbtn occasionbtn btn btn-outline btn-primary btn-sm m-1 btn-active" id="all">All</button>
+          <button class="filterbtn occasionbtn btn btn-outline btn-primary btn-sm m-1" id="bundle">Bundle</button>
+          <button class="filterbtn occasionbtn btn btn-outline btn-primary btn-sm m-1" id="individual">Individual</button>  
+        </div>
+      </div>
+      <!-- colour filter -->
+      <div class="text-center">
+        <div class="filterbtns colour inline">
+          <button class="filterbtn colourbtn btn btn-outline btn-primary btn-sm m-1 btn-active" id="all">All</button>
+          <button class="filterbtn colourbtn btn btn-outline btn-primary btn-sm m-1" id="red">Red</button>
+          <button class="filterbtn colourbtn btn btn-outline btn-primary btn-sm m-1" id="gold">Gold</button>  
+          <button class="filterbtn colourbtn btn btn-outline btn-primary btn-sm m-1" id="black">Black</button>  
+          <button class="filterbtn colourbtn btn btn-outline btn-primary btn-sm m-1" id="white">White</button>  
+        </div>
+      </div>
+      <!-- order filter -->
+      <!-- <div class="text-center">
+        <div class="order inline">
+          <button class="orderfilter btn btn-outline btn-primary btn-sm m-1 btn-active" id="all">All</button>
+          <button class="orderfilter btn btn-outline btn-primary btn-sm m-1" id="individual">Individual</button>
+          <button class="orderfilter btn btn-outline btn-primary btn-sm m-1" id="bundle">Bundle</button>  
+        </div>
+      </div> -->
+    </div>
+
+    <!-- Divider -->
+    <div class="h-2 bg-primary"></div>
+
+    <!-- Cards display -->
+    <div class="filters flex flex-wrap justify-items-center justify-center m-4">
+      <!-- 1 -->
+        <div class="filter all black red white bundle card w-96 bg-base-100 shadow-xl m-8">
+          <figure>
+            <div class="carousel w-full">
+                <div id="item1" class="carousel-item w-full">
+                  <img src="img/waterbottle1a.png" class="w-full" />
+                </div> 
+                <div id="item2" class="carousel-item w-full">
+                  <img src="img/waterbottle1b.png" class="w-full" />
+                </div> 
+                <div id="item3" class="carousel-item w-full">
+                  <img src="img/waterbottle1c.png" class="w-full" />
+                </div> 
+                <div id="item4" class="carousel-item w-full">
+                  <img src="img/waterbottle1d.png" class="w-full" />
+                </div>
+              </div>     
+          </figure>
+          <div class="flex justify-center w-full gap-2">
+            <a href="#item1" class="btn btn-xs btn-outline btn-primary m-2">1</a> 
+            <a href="#item2" class="btn btn-xs btn-outline btn-primary m-2">2</a> 
+            <a href="#item3" class="btn btn-xs btn-outline btn-primary m-2">3</a> 
+            <a href="#item4" class="btn btn-xs btn-outline btn-primary m-2">4</a>
+          </div>          
+          <div class="card-body">
+            <h2 class="card-title">
+              4 Metal Waterbottles
+              <div class="badge badge-secondary">1</div>
+            </h2>
+            <p>Red / White / Black 4 Metal Waterbottle Bundle</p>
+            <div class="card-actions justify-end">
+              <div class="badge badge-outline">Bundle</div> 
+              <div class="badge badge-outline">Black</div>
+              <div class="badge badge-outline">Red</div>
+              <div class="badge badge-outline">White</div>
+            </div>
+            <button class="btn w-full btn-sm btn-outline btn-primary">Buy Now</button>
+          </div>
+        </div>
+      <!-- 2 -->
+      <div class="filter all black individual card w-96 bg-base-100 shadow-xl m-8">
+        <figure><img src="img/waterbottle2.png" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            Silver Mug
+            <div class="badge badge-secondary">2</div>
+          </h2>
+          <p>Black "Hug in a Mug" Silver Mug</p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">Individual</div> 
+            <div class="badge badge-outline">Black</div>
+          </div>
+          <button class="btn w-full btn-sm btn-outline btn-primary">Buy Now</button>
+        </div>
+      </div>
+      <!-- 3 -->
+      <div class="filter all black individual card w-96 bg-base-100 shadow-xl m-8">
+        <figure><img src="img/waterbottle3.png" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            Dog Food Container
+            <div class="badge badge-secondary">3</div>
+          </h2>
+          <p>Black Dog Food Glass Container</p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">Individual</div> 
+            <div class="badge badge-outline">Black</div>
+          </div>
+          <button class="btn w-full btn-sm btn-outline btn-primary">Buy Now</button>
+        </div>
+      </div>
+      <!-- 4 -->
+      <div class="filter all gold bundle card w-96 bg-base-100 shadow-xl m-8">
+        <figure>
+            <div class="carousel w-full">
+                <div id="item1b" class="carousel-item w-full">
+                  <img src="img/waterbottle4.png" class="w-full" />
+                </div> 
+                <div id="item2b" class="carousel-item w-full">
+                  <img src="img/waterbottle5.png" class="w-full" />
+                </div> 
+              </div>     
+          </figure>
+          <div class="flex justify-center w-full gap-2">
+            <a href="#item1b" class="btn btn-xs btn-outline btn-primary m-2">1</a> 
+            <a href="#item2b" class="btn btn-xs btn-outline btn-primary m-2">2</a> 
+          </div>          
+        <div class="card-body">
+          <h2 class="card-title">
+            Mr. + Mrs. Wine Glasses
+            <div class="badge badge-secondary">4</div>
+          </h2>
+          <p>Gold Mr. + Mrs. Wine Glass Bundle</p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">Bundle</div> 
+            <div class="badge badge-outline">Gold</div>
+          </div>
+          <button class="btn w-full btn-sm btn-outline btn-primary">Buy Now</button>
+        </div>
+      </div>
+      <!-- 5 -->
+      <div class="filter all black bundle card w-96 bg-base-100 shadow-xl m-8">
+        <figure><img src="img/waterbottle6.png" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            King + Queen Wine Glasses
+            <div class="badge badge-secondary">5</div>
+          </h2>
+          <p>Black King + Queen Wine Glass Bundle</p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">Bundle</div> 
+            <div class="badge badge-outline">Black</div>
+          </div>
+          <button class="btn w-full btn-sm btn-outline btn-primary">Buy Now</button>
+        </div>
+      </div>
+      <!--  -->
+
+                    
+    </div>
+    <script src = "bottles.js"></script>
+</body>
+</html>

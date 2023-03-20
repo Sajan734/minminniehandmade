@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minminnie Handmade - Order Now</title>
+    <link rel="stylesheet" href="./dist/output.css">
+</head>
+<input type="checkbox" id="my-modal-6" class="modal-toggle" />
+<div class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+    <h3 class="font-bold text-lg text-primary">Order Complete!</h3>
+    <p class="py-4">Thank you for choosing MinMinnie Handmade! We truly appreciate your support and hope you enjoy your purchase. We will stay in contact with you, and if you missed any information, we will be sure to contact you again.</p>
+    <div class="modal-action">
+      <a href="index.html"><button class="btn btn-primary">Back to Home</button></a>
+      <!-- <label for="my-modal-6" class="btn">Back to Home</label> -->
+    </div>
+  </div>
+</div>
+<body>
+   <!-- NAVBAR -->
+    <div class="navbar bg-primary text-primary-content z-10">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </label>
+            <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-primary rounded-box w-52">
+              <li><a class="btn btn-primary">About Us</a></li>
+              <li tabindex="0">
+                <a class=" btn btn-primary">
+                  Products
+                  <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/></svg>
+                </a>
+                <ul class="p-2 bg-primary rounded-box">
+                  <li><a class="btn btn-primary" href="productcards.html">Cards</a></li>
+                  <li><a class="btn btn-primary">Cake Toppers</a></li>
+                  <li><a class="btn btn-primary">Balloon Present</a></li>
+                  <li><a class="btn btn-primary">Water Bottles</a></li>
+                  <li><a class="btn btn-primary">Other</a></li>
+                </ul>
+              </li>
+              <li><a class="btn btn-primary">FAQ</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost normal-case text-xl" href="index.html">MinMinnie Handmade</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>About Us</a></li>
+            <li tabindex="0">
+              <a>
+                Products
+                <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
+              </a>
+              <ul class="p-2 bg-primary rounded-box">
+                <li><a class="btn btn-primary"  href="productcards.html">Cards</a></li>
+                <li><a class="btn btn-primary">Cake Toppers</a></li>
+                <li><a class="btn btn-primary">Balloon Present</a></li>
+                <li><a class="btn btn-primary">Water Bottles</a></li>
+                <li><a class="btn btn-primary">Other</a></li>
+            </ul>
+            </li>
+            <li><a>FAQ</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn btn-secondary" href="ordernow.html">Order Now</a>
+        </div>
+    </div>
+    <!-- FORM -->
+    <div class="min-h-screen bg-secondary-focus p-2 md:p-8">
+        <div class="mx-4 bg-secondary rounded-tl-3xl rounded-br-3xl border-2 border-primary shadow-l hover:shadow-2xl">
+            <div class="pt-10 text-center">
+                <h1 class="text-primary font-bold text-center text-4xl">Order Now!</h1>
+                <p class="text-primary text-2xl">Please enter the necessary information.</p>    
+            </div>
+            <div class="text-center mt-2 z-0">
+                <ul class="steps">
+                    <li class="contactstep step step-primary">Contact Info</li>
+                    <li class="selectstep step">Select</li>
+                    <li class="purchasestep step">Purchase</li>
+                </ul>
+            </div>
+            <!-- CONTACTING INFO -->
+            <div class="orderstep contacting">
+                <p class="text-xl text-center mt-8 text-primary font-bold">Contacting Information</p>
+                <div class="flex flex-wrap justify-items-center justify-center">
+                    <div class="form-control p-2">
+                        <label class="input-group">
+                          <span class="bg-primary text-white">First name</span>
+                          <input type="text" placeholder="First name..." class="input input-bordered hover:outline-none hover:bg-white hover:border-primary focus:outline-none focus:bg-white focus:border-primary" required="required"/>
+                        </label>
+                    </div>
+                    <div class="form-control p-2">
+                        <label class="input-group">
+                          <span class="bg-primary text-white">Last name</span>
+                          <input type="text" placeholder="Last name..." class="input input-bordered hover:outline-none hover:bg-white hover:border-primary focus:outline-none focus:bg-white focus:border-primary" required="required"/>
+                        </label>
+                    </div>
+                </div>
+                <div class="flex flex-wrap justify-items-center justify-center">
+                    <div class="form-control p-1">
+                        <label class="input-group input-group-sm">
+                          <span class="bg-primary text-white">Email</span>
+                          <input type="text" placeholder="Enter a valid email..." class="input input-sm input-bordered hover:outline-none hover:bg-white hover:border-primary focus:outline-none focus:bg-white focus:border-primary" />
+                        </label>
+                    </div>
+                    <div class="form-control p-1">
+                        <label class="input-group input-group-sm">
+                          <span class="bg-primary text-white">Phone #</span>
+                          <input type="text" placeholder="Enter a valid phone #..." class="input input-sm input-bordered hover:outline-none hover:bg-white hover:border-primary focus:outline-none focus:bg-white focus:border-primary" />
+                        </label>
+                    </div>
+                    <div class="form-control p-1">
+                        <label class="input-group input-group-sm">
+                          <span class="bg-primary text-white">Street address</span>
+                          <input type="text" placeholder="Street address..." class="input input-sm input-bordered hover:outline-none hover:bg-white hover:border-primary focus:outline-none focus:bg-white focus:border-primary" />
+                        </label>
+                    </div>
+                </div>
+                <div class="flex flex-wrap justify-items-center justify-center mb-4">
+                    <div class="form-control p-1">
+                        <label class="input-group input-group-sm">
+                          <span class="bg-primary text-white">Postal Code</span>
+                          <input  type="text" placeholder="Enter a postal code..." class="input input-sm input-bordered hover:outline-none hover:bg-white hover:border-primary focus:outline-none focus:bg-white focus:border-primary" />
+                        </label>
+                    </div>
+                    <div class="form-control p-1">
+                        <label class="input-group input-group-sm">
+                          <span class="bg-primary text-white">Shipment (Optional)</span>
+                          <input type="text" placeholder="Apt., unit, suite, etc." class="input input-sm input-bordered hover:outline-none hover:bg-white hover:border-primary focus:outline-none focus:bg-white focus:border-primary" />
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SELECT -->
+            <div class="orderstep selectproduct">
+                <p class="text-xl text-center mt-8 text-primary font-bold">Select Product</p>
+                <div class="flex flex-wrap justify-items-center justify-center">
+                    <div class="form-control p-1">
+                        <label class="input-group input-group-sm">
+                          <span class="bg-primary text-white">Product</span>
+                          <select class="select select-bordered hover:outline-none hover:bg-white hover:border-primary focus:outline-none focus:bg-white focus:border-primary">
+                            <option disabled selected>Select a product</option>
+                            <option>Cards</option>
+                            <option>Cake Toppers</option>
+                            <option>Balloon Present</option>
+                            <option>Water Bottles</option>
+                          </select>
+                        </label>
+                    </div>
+                    <div class="form-control p-1">
+                        <label class="input-group">
+                          <span class="bg-primary text-white">ID</span>
+                          <input type="text" placeholder="10" class="input input-bordered hover:outline-none hover:bg-white hover:border-primary focus:outline-none focus:bg-white focus:border-primary"/>
+                        </label>
+                    </div>
+                </div>
+                <p class="text-l text-center mt-4 text-primary font-bold">Customize Options</p>
+                <p class="text-md text-center text-primary">Please note that the cost increases depending on the customization.</p>
+                <div class="flex flex-wrap justify-items-center justify-center">
+                    <div class="form-control p-1">
+                        <label class="input-group input-group-vertical">
+                          <span class="bg-primary text-white">Description of product</span>
+                          <textarea class="textarea textarea-lg hover:outline-none hover:bg-white hover:border-primary focus:outline-none focus:bg-white focus:border-primary" placeholder="Description..." rows="2" cols="45"></textarea>
+                        </label>
+                    </div>
+                </div>
+                <div class="flex flex-wrap justify-items-center justify-center mb-4">
+                    <div class="form-control p-1">
+                        <label class="input-group input-group-sm">
+                          <span class="bg-primary text-white">Colour</span>
+                          <input type="text" placeholder="Blue" class="input input-sm input-bordered hover:outline-none hover:bg-white hover:border-primary focus:outline-none focus:bg-white focus:border-primary"/>
+                        </label>
+                    </div>
+                    <div class="form-control p-1">
+                        <label class="input-group input-group-sm">
+                          <span class="bg-primary text-white">Occasion</span>
+                          <input type="text" placeholder="Birthday" class="input input-sm input-bordered hover:outline-none hover:bg-white hover:border-primary focus:outline-none focus:bg-white focus:border-primary"/>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PURCHASE -->
+            <div class="orderstep purchase">
+                <p class="text-xl text-center mt-8 text-primary font-bold">Purchase</p>
+                <p class="text-md text-center text-primary mb-4">Please note that it may take a few days for us to read your request. We will message you if more details are needed.</p>
+                <div class="flex flex-wrap justify-items-center justify-center">
+                    <div class="form-control p-1">
+                        <label class="input-group input-group-md">
+                          <span class="bg-primary text-white">Due Date</span>
+                          <input type="date" class="input input-md input-bordered hover:outline-none hover:bg-white hover:border-primary focus:outline-none focus:bg-white focus:border-primary"/>
+                        </label>
+                    </div>
+                </div>
+                <div class="flex flex-wrap justify-items-center justify-center">
+                    <div class="form-control">
+                        <label class="label cursor-pointer">
+                            <span class="label-text p-2 text-primary">Register to be notified for sales?</span> 
+                            <input type="checkbox" checked="checked" class="checkbox checkbox-primary" />
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flex flex-wrap justify-items-center justify-center">
+                <button class="contactbtn btn btn-sm btn-outline btn-wide btn-primary m-2" onclick="displayContact()">Contact</button>
+                <button class="selectbtn btn btn-sm btn-outline btn-wide btn-primary m-2" onclick="displaySelect()">Select</button>
+                <button class="purchasebtn btn btn-sm btn-outline btn-wide btn-primary m-2" onclick="displayPurchase()">Purchase</button>
+            </div>
+            <div class="flex flex-wrap justify-items-center justify-center">
+                <label for="my-modal-6" class="finish btn text-2xl p-1 btn-wide btn-primary m-4">Buy Now!</label>
+            </div>
+        </div>
+<script src = "order.js"></script>
+</body>
+</html>
